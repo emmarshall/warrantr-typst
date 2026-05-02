@@ -1,0 +1,46 @@
+---
+# Exhibit-only render. Includes the attachment cover sheet plus the
+# text-messages exhibit page(s) so the exhibit reads as a self-
+# contained packet (cover + records).
+#
+# Render with:  quarto render exhibit-only.qmd
+
+format: warrant-vignette-typst
+document-types:
+  - attachment
+  - exhibit
+
+# ---- Jurisdiction & personnel (kept for header consistency
+#      even though attachment cover doesn't display them) ----
+state: Westbridge
+county: Hartwell County
+city: Northfield
+detective-name: Detective J. Hayes
+
+case-number: CR24-087
+
+# ---- Exhibit content (the substance of this render) ----
+exhibit-description: |
+  Attached is an extract of the text-message thread between
+  [Suspect A] and [Suspect B] dated 04-20-24 concerning the
+  purchase and use of [redacted].
+
+# Switch from meta-records (Facebook) to text-messages (SMS).
+# `text-messages` and `sms` are accepted as aliases.
+exhibit-type: text-messages
+exhibit-title: TEXT MESSAGE EXTRACT
+exhibit-device: "Samsung Galaxy A10e — Serial #RF8N41QDFOE"
+
+# Each record needs: sender, timestamp, direction (out / in), body.
+# The renderer tints outbound messages with a different label color
+# so the conversation reads like a transcript.
+exhibit-records:
+  - {sender: "[Suspect A]", direction: out, timestamp: "2024-04-20 16:47:34", body: "Hey we can get the show on the road the stuff came in"}
+  - {sender: "[Suspect B]", direction: in,  timestamp: "2024-04-20 16:47:37", body: "Bet"}
+  - {sender: "[Suspect A]", direction: out, timestamp: "2024-04-20 16:48:02", body: "It came 2day"}
+  - {sender: "[Suspect B]", direction: in,  timestamp: "2024-04-20 16:48:36", body: "Just the one or both"}
+  - {sender: "[Suspect A]", direction: out, timestamp: "2024-04-20 16:49:14", body: "Both"}
+  - {sender: "[Suspect A]", direction: out, timestamp: "2024-04-20 16:49:27", body: "What I ordered last month"}
+  - {sender: "[Suspect B]", direction: in,  timestamp: "2024-04-20 16:50:06", body: "Are we starting it today"}
+  - {sender: "[Suspect A]", direction: out, timestamp: "2024-04-20 16:50:30", body: "We can if u want the one will stop the hormones"}
+---

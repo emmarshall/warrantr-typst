@@ -1,0 +1,66 @@
+---
+# Photo-log exhibit-only render. Attachment cover sheet plus a chain-
+# of-custody photo grid showing physical evidence items.
+#
+# Render with:  quarto render exhibit-photos.qmd
+
+format: warrant-vignette-typst
+document-types:
+  - attachment
+  - exhibit
+
+# ---- Header consistency ----
+state: Westbridge
+county: Hartwell County
+city: Northfield
+detective-name: Detective J. Hayes
+
+case-number: CR24-087
+
+# ---- Exhibit content ----
+exhibit-description: |
+  Attached is the chain-of-custody photo log for physical items
+  recovered from the search of the residence on 04-29-24.
+
+# `photo-log`, `photos`, and `evidence-photos` are accepted as aliases.
+exhibit-type: photo-log
+exhibit-title: PHYSICAL EVIDENCE PHOTO LOG
+exhibit-device: "Detective J. Hayes — Northfield Police Investigations Unit"
+exhibit-columns: 2
+
+# Each record carries:
+#   item-id      — sequence number ("1", "2", ...)
+#   path         — image path (relative to the project root); leave
+#                  blank to render a placeholder rectangle
+#   description  — what the photo shows
+#   timestamp    — when the photo was taken
+#   photographer — who took it (or `officer:` as alias)
+#
+# Leave `path:` blank if you don't have actual photos yet — the
+# renderer drops in a labeled placeholder cell.
+exhibit-records:
+  - {item-id: "1",
+     description: "Pill bottle recovered from upstairs bathroom; label partially intact.",
+     timestamp: "2024-04-29 14:30",
+     photographer: "Det. J. Hayes"}
+  - {item-id: "2",
+     description: "Samsung Galaxy A10e Smart phone, screen cracked, recovered from kitchen counter.",
+     timestamp: "2024-04-29 14:32",
+     photographer: "Det. J. Hayes"}
+  - {item-id: "3",
+     description: "Dell Latitude 5580 laptop, recovered from dining room table.",
+     timestamp: "2024-04-29 14:35",
+     photographer: "Det. J. Hayes"}
+  - {item-id: "4",
+     description: "Samsung Galaxy S7 Smart phone, recovered from upstairs bedroom dresser.",
+     timestamp: "2024-04-29 14:38",
+     photographer: "Det. J. Hayes"}
+  - {item-id: "5",
+     description: "External flash drive (USB), recovered from kitchen drawer.",
+     timestamp: "2024-04-29 14:42",
+     photographer: "Det. J. Hayes"}
+  - {item-id: "6",
+     description: "Receipt fragment, recovered from kitchen waste basket.",
+     timestamp: "2024-04-29 14:45",
+     photographer: "Det. J. Hayes"}
+---

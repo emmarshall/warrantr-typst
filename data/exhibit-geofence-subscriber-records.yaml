@@ -1,0 +1,33 @@
+# Records for exhibit-geofence-subscriber.qmd. Loaded by Typst's
+# yaml() function via the exhibit-records-file YAML field.
+
+- subscriber-name: "[Suspect A]"
+  account-number: "104871329500981"
+  account-created: "2017-08-20"
+  emails:
+    - "suspect.a@gmail.com"
+    - "alt.suspecta@gmail.com"
+  device-make-model: "Samsung Galaxy S9+ (SM-G965U)"
+  device-imei: "356938108472119"
+  phone-numbers:
+    - "+1 765 555 0173"
+  google-voice: "+1 765 555 0418"
+
+- subscriber-name: "[Witness B]"
+  account-number: "108234551249720"
+  account-created: "2019-03-14"
+  emails:
+    - "b.witness2019@gmail.com"
+  device-make-model: "Pixel 4a (G025M)"
+  device-imei: "352093115839642"
+  phone-numbers:
+    - "+1 765 555 0192"
+
+- subscriber-name: "[Witness C]"
+  account-number: "112004483921075"
+  account-created: "2018-11-02"
+  emails:
+    - "cwitness@gmail.com"
+  device-make-model: "Apple iPhone 11 (A2111)"
+  phone-numbers:
+    - "+1 765 555 0244"

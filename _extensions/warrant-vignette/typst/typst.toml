@@ -1,0 +1,18 @@
+# Typst package manifest for the warrant-vignette extension.
+# Allows the library to be imported as @local/warrant-vignette.
+#
+# To register locally, copy or symlink this directory into:
+#   $XDG_DATA_HOME/typst/packages/local/warrant-vignette/0.1.0/
+# (on macOS: ~/Library/Application Support/typst/packages/local/...)
+#
+# The Quarto extension wrapper (Phase 4) will handle this automatically.
+
+[package]
+name = "warrant-vignette"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["Fitz"]
+license = "MIT"
+description = "Realistic search warrant document mock-ups for psychology-law research vignettes."
+categories = ["fun"]
+keywords = ["legal", "stimulus", "vignette", "research"]

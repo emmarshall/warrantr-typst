@@ -1,0 +1,34 @@
+---
+# Geofence-subscriber exhibit. Sensorvault Step 3 production: per-
+# device subscriber/CSI return after law enforcement narrowed the
+# device list. Each block is one de-anonymized account with name,
+# account number, email(s), device, phone numbers.
+#
+# Render with:  quarto render exhibit-geofence-subscriber.qmd
+
+format: warrant-vignette-typst
+document-types:
+  - attachment
+  - exhibit
+
+# ---- Header consistency ----
+state: "Indiana"
+county: "Pawnee County"
+city: "Pawnee"
+detective-name: "Detective B. Macklin"
+case-number: "CR24-087"
+
+# ---- Exhibit content ----
+exhibit-description: |
+  Attached is the Step 3 subscriber-information production from
+  Google LLC, listing identifying account information for the
+  devices law enforcement narrowed from the Step 1 anonymized
+  list.
+
+exhibit-type: geofence-subscriber
+exhibit-title: "Google LLC -- Subscriber Information Production"
+
+# Records live in a separate YAML data file because Pandoc's typst
+# metadata writer drops the dict contents for this record schema.
+exhibit-records-file: "data/exhibit-geofence-subscriber-records.yaml"
+---

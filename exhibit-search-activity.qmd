@@ -1,0 +1,34 @@
+---
+# Search-activity exhibit. Google "My Activity" search & web feed
+# from Google Takeout. Reverse-chronological list of search queries,
+# visited URLs, and app actions tagged by source app (Search,
+# Chrome, Maps, Assistant).
+#
+# Render with:  quarto render exhibit-search-activity.qmd
+
+format: warrant-vignette-typst
+document-types:
+  - attachment
+  - exhibit
+
+# ---- Header consistency ----
+state: "Indiana"
+county: "Pawnee County"
+city: "Pawnee"
+detective-name: "Detective B. Macklin"
+case-number: "CR24-087"
+
+# ---- Exhibit content ----
+exhibit-description: |
+  Attached is an extract of the Google "My Activity" feed for the
+  Subject Account, showing search queries, visited URLs, and
+  Maps / Assistant actions in the days surrounding the incident.
+
+exhibit-type: search-activity
+exhibit-title: "Google My Activity -- Search & Browsing"
+account-id: "104871329500981"
+
+# Records live in a separate YAML data file because Pandoc's typst
+# metadata writer drops the dict contents for this record schema.
+exhibit-records-file: "data/exhibit-search-activity-records.yaml"
+---

@@ -1,0 +1,94 @@
+---
+# Test render of the warrant-vignette extension. Render with:
+#
+#   quarto render test-warrant.qmd
+#
+# Output is `test-warrant.pdf` in this directory. To get the photocopy
+# effect on top, run R/render_warrant.R from the dissertation-studies
+# project, pointing at this file.
+
+format: warrant-vignette-typst
+
+# Document ordering for the packet
+document-types:
+  - affidavit
+  - attachment
+  - exhibit
+  - warrant
+  - return
+
+# ---- Jurisdiction (fixed) ----
+state: Westbridge
+county: Hartwell County
+city: Northfield
+court-name: Hartwell County Court
+judicial-district: 4th Judicial District
+
+# ---- Personnel (fixed) ----
+clerk-name: M. Donovan
+judge-name: Hon. R. Patterson
+judge-title-full: County Judge — 4th Judicial District
+detective-name: Detective J. Hayes
+detective-badge: "#142"
+detective-unit: Northfield Police Investigations Unit
+detective-division: Northfield Police Division
+detective-years: 22
+notary-name: M. Reilly
+notary-commission-exp: March 4, 2027
+
+# ---- Per-case (variable) ----
+case-number: CR24-087
+case-id-barcode: 000087412D03
+filed-date: AUG 12 2024
+filed-time: "10:42"
+warrant-time: "9:05"
+warrant-period: DAYTIME
+
+search-address: 419 W. Maple Avenue, Northfield, Hartwell County, Westbridge
+property-description: |
+  This is a two story house on the northeast corner of the intersection
+  of W. Maple Ave. and 4th St. The porch and front door are on the
+  south side of the residence.
+
+suspect-names:
+  - "[Suspect A]"
+  - "[Suspect B]"
+
+items-to-seize:
+  - Electronic information devices such as computers, phones, electronic tablets.
+  - External storage devices such as flash drives.
+  - Medications which could be used for the purpose of [redacted].
+  - Evidence of internet searches relating to [redacted].
+  - Messages regarding the use of [redacted].
+
+narrative-paragraphs:
+  - "On 04-26-24 I began an investigation into the concerns that [Suspect B], age 17, had given birth prematurely to a stillborn child. [Suspect B] enacted the help of [Suspect A] and the two of them buried the child together. Both individuals were telling others they needed to dig the child's body up and then burn it."
+  - "Over the next days I conducted interviews and obtained medical records. The medical records I obtained on 04-29-24 showed [Suspect B] had been pregnant on 03-08-24."
+  - "On 04-29-24 I interviewed both [Suspect A] and [Suspect B] separately. The investigation continued through medical records, social-media records, and witness interviews."
+  - "On 06-07-24 I obtained and served a search warrant to a social-media platform. On 06-09-24 I received the results, which included messages between the suspects discussing the purchase and use of [redacted]."
+
+inventory-items:
+  - "Samsung Galaxy A10e Smart phone Model #SM-A102U1, Serial #RF8N41QDFOE"
+  - "LG Smartphone Model G7 ThinQ, Serial #902KPNY0198743"
+  - "Samsung Galaxy S7 Model #SM-G930F, Serial #R58H64LQJAP"
+  - "Toshiba laptop computer, Model PSSD2N-01900K, Serial #X9059212H"
+  - "Dell Latitude 5580 laptop computer, Serial #JF7KPH2"
+
+exhibit-description: |
+  Attached are printouts (2 pages) of the conversation between
+  [Suspect A] and [Suspect B] dated 04-20-24 over a social-media
+  platform concerning the purchase and use of [redacted].
+
+exhibit-type: meta-records
+exhibit-starting-page: 1403
+
+exhibit-records:
+  - {author: "[Suspect A]", account: "100009604664543", sent: "2024-04-20 16:47:34 UTC", body: "Hey we can get the show on the road the stuff came in"}
+  - {author: "[Suspect B]", account: "592346902",        sent: "2024-04-20 16:47:37 UTC", body: "Bet"}
+  - {author: "[Suspect A]", account: "100009604664543", sent: "2024-04-20 16:48:02 UTC", body: "It came 2day"}
+  - {author: "[Suspect B]", account: "592346902",        sent: "2024-04-20 16:48:36 UTC", body: "Just the one or both"}
+  - {author: "[Suspect A]", account: "100009604664543", sent: "2024-04-20 16:49:14 UTC", body: "Both"}
+  - {author: "[Suspect A]", account: "100009604664543", sent: "2024-04-20 16:49:27 UTC", body: "What I ordered last month"}
+  - {author: "[Suspect B]", account: "592346902",        sent: "2024-04-20 16:50:06 UTC", body: "Are we starting it today"}
+  - {author: "[Suspect A]", account: "100009604664543", sent: "2024-04-20 16:50:30 UTC", body: "We can if u want the one will stop the hormones"}
+---

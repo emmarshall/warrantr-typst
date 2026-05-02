@@ -1,0 +1,33 @@
+---
+# Location-timeline exhibit. Google Maps Timeline place visits
+# export, grouped by date. Each entry shows place name, address,
+# arrival/departure times, and an optional confidence label.
+#
+# Render with:  quarto render exhibit-location-timeline.qmd
+
+format: warrant-vignette-typst
+document-types:
+  - attachment
+  - exhibit
+
+# ---- Header consistency ----
+state: "Indiana"
+county: "Pawnee County"
+city: "Pawnee"
+detective-name: "Detective B. Macklin"
+case-number: "CR24-087"
+
+# ---- Exhibit content ----
+exhibit-description: |
+  Attached is an extract of the Google Maps Timeline (Your Places
+  / Your Timeline) for the Subject Account covering the three
+  days surrounding the incident.
+
+exhibit-type: location-timeline
+exhibit-title: "Google Maps Timeline -- Place Visits"
+exhibit-device: "Subject Account 104871329500981 -- Samsung Galaxy S9+"
+
+# Records live in a separate YAML data file because Pandoc's typst
+# metadata writer drops the dict contents for this record schema.
+exhibit-records-file: "data/exhibit-location-timeline-records.yaml"
+---

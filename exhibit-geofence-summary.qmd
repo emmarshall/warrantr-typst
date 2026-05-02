@@ -1,0 +1,34 @@
+---
+# Geofence-summary exhibit. Per-device aggregate of the Sensorvault
+# Step 1 production: one row per anonymized device with first/last
+# record times, total record count, and the smallest / largest Maps
+# Display Radius observed.
+#
+# Render with:  quarto render exhibit-geofence-summary.qmd
+
+format: warrant-vignette-typst
+document-types:
+  - attachment
+  - exhibit
+
+# ---- Header consistency ----
+state: "Indiana"
+county: "Pawnee County"
+city: "Pawnee"
+detective-name: "Detective B. Macklin"
+case-number: "CR24-087"
+
+# ---- Exhibit content ----
+exhibit-description: |
+  Attached is a summary of records received from Google LLC in
+  response to the geofence search warrant. The table aggregates
+  the per-device counts, time ranges, and Maps Display Radii.
+
+exhibit-type: geofence-summary
+exhibit-title: "Summary of Records Received from Google"
+exhibit-device: "Pawnee County Court, Case CR24-087"
+
+# Records live in a separate YAML data file because Pandoc's typst
+# metadata writer drops the dict contents for this record schema.
+exhibit-records-file: "data/exhibit-geofence-summary-records.yaml"
+---

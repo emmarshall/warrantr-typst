@@ -1,0 +1,38 @@
+---
+# Geofence-anonymized exhibit. Sensorvault Step 1 production: per-
+# device location points returned by Google in response to the
+# geofence warrant. Each row is one location point with anonymized
+# device ID, timestamp, lat/long, source, and Maps Display Radius.
+#
+# Render with:  quarto render exhibit-geofence-anonymized.qmd
+
+format: warrant-vignette-typst
+document-types:
+  - attachment
+  - exhibit
+
+# ---- Header consistency ----
+state: "Indiana"
+county: "Pawnee County"
+city: "Pawnee"
+detective-name: "Detective B. Macklin"
+case-number: "CR24-087"
+
+# ---- Exhibit content ----
+exhibit-description: |
+  Attached is the Step 1 anonymized location production from
+  Google LLC pursuant to the geofence search warrant. Each record
+  is a location point reported by a device inside the geographical
+  area during the requested time window.
+
+exhibit-type: geofence-anonymized
+exhibit-title: "Google LLC -- Geofence Production"
+geofence-step: 1
+geofence-window-start: "2024-04-22 16:20 EST"
+geofence-window-end:   "2024-04-22 17:20 EST"
+
+# Records live in a separate YAML data file because Pandoc's typst
+# metadata writer drops the dict contents for this record schema.
+# Typst loads them directly via yaml() inside the dispatcher.
+exhibit-records-file: "data/exhibit-geofence-anonymized-records.yaml"
+---

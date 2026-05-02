@@ -1,0 +1,47 @@
+---
+# Search-warrant-only render. Single-page output.
+#
+# Render with:  quarto render warrant-only.qmd
+
+format: warrant-vignette-typst
+document-types:
+  - warrant
+
+# ---- Jurisdiction (fixed) ----
+state: Westbridge
+county: Hartwell County
+city: Northfield
+court-name: Hartwell County Court
+judicial-district: 4th Judicial District
+
+# ---- Personnel (fixed) ----
+clerk-name: M. Donovan
+judge-name: Hon. R. Patterson
+judge-title-full: County Judge — 4th Judicial District
+detective-name: Detective J. Hayes
+detective-badge: "#142"
+detective-unit: Northfield Police Investigations Unit
+detective-division: Northfield Police Division
+detective-years: 22
+
+# ---- Per-case (variable) ----
+case-number: CR24-087
+case-id-barcode: 000087412D03
+filed-date: AUG 12 2024
+filed-time: "10:42"
+warrant-time: "9:05"
+warrant-period: DAYTIME
+
+search-address: 419 W. Maple Avenue, Northfield, Hartwell County, Westbridge
+
+suspect-names:
+  - "[Suspect A]"
+  - "[Suspect B]"
+
+items-to-seize:
+  - Electronic information devices such as computers, phones, electronic tablets.
+  - External storage devices such as flash drives.
+  - Medications which could be used for the purpose of [redacted].
+  - Evidence of internet searches relating to [redacted].
+  - Messages regarding the use of [redacted].
+---

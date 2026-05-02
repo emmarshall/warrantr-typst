@@ -1,0 +1,52 @@
+---
+# Browser-history exhibit-only render. Attachment cover sheet plus a
+# tabular browser-activity extract showing search queries and visits
+# in chronological order.
+#
+# Render with:  quarto render exhibit-browser.qmd
+
+format: warrant-vignette-typst
+document-types:
+  - attachment
+  - exhibit
+
+# ---- Header consistency ----
+state: Westbridge
+county: Hartwell County
+city: Northfield
+detective-name: Detective J. Hayes
+
+case-number: CR24-087
+
+# ---- Exhibit content ----
+exhibit-description: |
+  Attached is an extract of recent search-engine queries and visited
+  URLs recovered from the suspect's primary browsing device on
+  04-22-24, ordered chronologically.
+
+# `browser-history` and `search-history` are accepted as aliases.
+exhibit-type: browser-history
+exhibit-title: BROWSER ACTIVITY EXTRACT
+exhibit-device: "Samsung Galaxy A10e — Serial #RF8N41QDFOE"
+
+# Each record carries:
+#   timestamp — date + time of the activity
+#   type      — search | visit | download
+#   query     — for searches: the query terms (use this OR url)
+#   url       — for visits / downloads: the URL
+#   title     — page title (for visits) or source description
+#   source    — browser name (Chrome, Safari, Firefox, etc.)
+#
+# Searches are tinted blue; visits and downloads are gray.
+exhibit-records:
+  - {timestamp: "2024-04-18 09:14", type: search, query: "what to expect at 23 weeks pregnant",     source: "Chrome (Mobile)"}
+  - {timestamp: "2024-04-18 09:18", type: visit,  url: "https://www.example-clinic.org/late-term", title: "Late-term care information",  source: "Chrome (Mobile)"}
+  - {timestamp: "2024-04-19 22:03", type: search, query: "how to induce labor at home safely",     source: "Chrome (Mobile)"}
+  - {timestamp: "2024-04-19 22:05", type: search, query: "[redacted] medication purchase online",  source: "Chrome (Mobile)"}
+  - {timestamp: "2024-04-19 22:11", type: visit,  url: "https://meds-online.example/checkout",     title: "Checkout — order confirmation",  source: "Chrome (Mobile)"}
+  - {timestamp: "2024-04-19 22:15", type: search, query: "how long does [redacted] take to work",  source: "Chrome (Mobile)"}
+  - {timestamp: "2024-04-20 13:42", type: search, query: "side effects of taking [redacted]",      source: "Chrome (Mobile)"}
+  - {timestamp: "2024-04-20 13:47", type: visit,  url: "https://forum.example/thread/19842",       title: "Patient forum — symptom thread",  source: "Chrome (Mobile)"}
+  - {timestamp: "2024-04-20 16:30", type: search, query: "how to dispose of [redacted] evidence",  source: "Chrome (Mobile)"}
+  - {timestamp: "2024-04-22 03:12", type: search, query: "buried remains decomposition timeline",  source: "Chrome (Mobile)"}
+---

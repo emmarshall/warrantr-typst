@@ -1,0 +1,61 @@
+---
+# Meta-records exhibit. Mimics a Meta / Facebook business-record
+# export with the canonical black header bar and Author / Sent /
+# Body record blocks.
+#
+# Render with:  quarto render exhibit-meta-records.qmd
+
+format: warrant-vignette-typst
+document-types:
+  - attachment
+  - exhibit
+
+# ---- Header consistency ----
+state: "Indiana"
+county: "Pawnee County"
+city: "Pawnee"
+detective-name: "Detective B. Macklin"
+case-number: "CR24-087"
+
+# ---- Exhibit content ----
+exhibit-description: |
+  Attached is the Meta Platforms business-record export of
+  Messenger conversations between [Suspect A] and [Suspect B]
+  dated 04-22-24, served pursuant to the search warrant.
+
+exhibit-type: meta-records
+exhibit-starting-page: 1403
+exhibit-records:
+  - {author: "[Suspect A]",
+     account: "100009604664543",
+     sent: "2024-04-22 16:47:34 UTC",
+     body: "Hey we can get the show on the road the stuff came in"}
+  - {author: "[Suspect B]",
+     account: "100007123459081",
+     sent: "2024-04-22 16:47:39 UTC",
+     body: "Bet"}
+  - {author: "[Suspect A]",
+     account: "100009604664543",
+     sent: "2024-04-22 16:48:02 UTC",
+     body: "It came 2day"}
+  - {author: "[Suspect B]",
+     account: "100007123459081",
+     sent: "2024-04-22 16:48:36 UTC",
+     body: "Just the one or both"}
+  - {author: "[Suspect A]",
+     account: "100009604664543",
+     sent: "2024-04-22 16:49:14 UTC",
+     body: "Both"}
+  - {author: "[Suspect A]",
+     account: "100009604664543",
+     sent: "2024-04-22 16:49:27 UTC",
+     body: "What I ordered last month"}
+  - {author: "[Suspect B]",
+     account: "100007123459081",
+     sent: "2024-04-22 16:50:06 UTC",
+     body: "Are we starting it today"}
+  - {author: "[Suspect A]",
+     account: "100009604664543",
+     sent: "2024-04-22 16:50:30 UTC",
+     body: "We can if u want."}
+---

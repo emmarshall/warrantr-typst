@@ -1,0 +1,55 @@
+---
+# Arrest-warrant render. Single-page output modeled on the federal
+# AO 442 form layout (court header, plaintiff-v-defendant caption,
+# YOU ARE COMMANDED command, charging-document checkboxes, narrative
+# offense description, signature/date footer, and a Return box).
+# Adapted to the fictional jurisdiction.
+#
+# Render with:  quarto render arrest-warrant-only.qmd
+
+format: warrant-vignette-typst
+document-types:
+  - arrest-warrant
+
+# ---- Jurisdiction (fixed) ----
+state: Westbridge
+county: Hartwell County
+city: Northfield
+court-name: Hartwell County District Court
+judicial-district: 4th Judicial District
+
+# ---- Personnel (fixed) ----
+judge-name: Hon. R. Patterson
+judge-title-full: County Judge — 4th Judicial District
+detective-name: Detective J. Hayes
+
+# ---- Per-case (variable) ----
+case-number: CR24-087
+filed-date: AUG 12 2024
+
+# ---- Arrest-warrant specific ----
+# defendant-name defaults to suspect-names[0] if not set, but
+# you can override here for clarity.
+defendant-name: "[Suspect A]"
+
+# Which charging document was filed. Valid values:
+#   indictment | superseding-indictment
+#   information | superseding-information
+#   complaint
+#   probation-violation-petition | supervised-release-violation-petition
+#   violation-notice | order-of-the-court
+charging-document-type: complaint
+
+# Multi-paragraph narrative explanation of the charges. Each entry
+# becomes its own indented paragraph in the "This offense is briefly
+# described as follows:" section. Edit per condition.
+charges-description:
+  - "On 04-26-24, the defendant did unlawfully procure and administer medications for the purpose of inducing the termination of a pregnancy at approximately 23 weeks' gestation, in violation of [Westbridge statute reference]."
+  - "On or about 04-29-24, the defendant did transport and conceal the remains of the unborn child by burial on private property north of Northfield, in violation of [Westbridge statute reference]."
+  - "Investigation has further revealed that the defendant communicated electronically with a co-defendant on 04-20-24 concerning the procurement and use of the medications referenced in the above counts, and made internet searches consistent with planning the alleged offenses."
+  - "Probable cause is supported by medical records, electronic communications obtained pursuant to lawful search, and witness statements detailed in the affidavit filed contemporaneously with this application."
+
+suspect-names:
+  - "[Suspect A]"
+  - "[Suspect B]"
+---

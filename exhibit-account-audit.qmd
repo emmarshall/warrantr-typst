@@ -1,0 +1,63 @@
+---
+# Account-audit exhibit. McGriff-style Sensorvault audit record: a
+# numbered chronological log of account events (Account Created,
+# LH Enabled, Location Reporting Enabled, Device Associated,
+# Device Disassociated) for one Google account.
+#
+# Render with:  quarto render exhibit-account-audit.qmd
+
+format: warrant-vignette-typst
+document-types:
+  - attachment
+  - exhibit
+
+# ---- Header consistency ----
+state: "Indiana"
+county: "Pawnee County"
+city: "Pawnee"
+detective-name: "Detective B. Macklin"
+case-number: "CR24-087"
+
+# ---- Exhibit content ----
+exhibit-description: |
+  Attached is the audit record for the Google account associated
+  with the device identified in the Step 3 production. The audit
+  record documents the timestamps of Location History opt-in,
+  Location Reporting enablement, and device association events.
+
+exhibit-type: account-audit
+exhibit-title: "Google LLC Audit Record"
+account-id: "104871329500981"
+
+exhibit-records:
+  - timestamp: "2017-08-20 14:32:11 UTC"
+    event: "Account Created"
+    detail: "Subject Account created from IP 73.214.118.42."
+
+  - timestamp: "2017-08-20 14:35:47 UTC"
+    event: "Location History Setting Set"
+    detail: "Default value of 'off' applied at account creation."
+
+  - timestamp: "2018-07-09 04:09:23 UTC"
+    event: "LH Enabled (Sensorvault)"
+    detail: |
+      User opted in to Location History. Sensorvault server recorded
+      successful enablement. Opt-in occurred through a device-based
+      consent flow.
+    device-tag: "8174-2256-0431"
+
+  - timestamp: "2018-07-09 04:09:23 UTC"
+    event: "Location Reporting Enabled"
+    detail: "Subsetting enabled for Samsung Galaxy S9+ (SM-G965U)."
+    device-tag: "8174-2256-0431"
+
+  - timestamp: "2019-11-04 18:21:08 UTC"
+    event: "Device Associated"
+    detail: "New device added to the account."
+    device-tag: "5293-7104-8862"
+
+  - timestamp: "2024-03-15 09:14:55 UTC"
+    event: "Location Reporting Disabled"
+    detail: "Subsetting toggled off for device tag 5293-7104-8862."
+    device-tag: "5293-7104-8862"
+---

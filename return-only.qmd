@@ -1,0 +1,43 @@
+---
+# Return-and-Inventory only render. Single-page output.
+#
+# Render with:  quarto render return-only.qmd
+
+format: warrant-vignette-typst
+document-types:
+  - return
+
+# ---- Jurisdiction (fixed) ----
+state: Westbridge
+county: Hartwell County
+city: Northfield
+court-name: Hartwell County Court
+judicial-district: 4th Judicial District
+
+# ---- Personnel (fixed) ----
+clerk-name: M. Donovan
+detective-name: Detective J. Hayes
+detective-badge: "#142"
+detective-unit: Northfield Police Investigations Unit
+detective-division: Northfield Police Division
+notary-name: M. Reilly
+notary-commission-exp: March 4, 2027
+
+# ---- Per-case (variable) ----
+case-number: CR24-087
+filed-date: AUG 12 2024
+filed-time: "10:42"
+
+search-address: 419 W. Maple Avenue, Northfield, Hartwell County, Westbridge
+
+suspect-names:
+  - "[Suspect A]"
+  - "[Suspect B]"
+
+inventory-items:
+  - "Samsung Galaxy A10e Smart phone Model #SM-A102U1, Serial #RF8N41QDFOE"
+  - "LG Smartphone Model G7 ThinQ, Serial #902KPNY0198743"
+  - "Samsung Galaxy S7 Model #SM-G930F, Serial #R58H64LQJAP"
+  - "Toshiba laptop computer, Model PSSD2N-01900K, Serial #X9059212H"
+  - "Dell Latitude 5580 laptop computer, Serial #JF7KPH2"
+---

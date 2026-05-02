@@ -1,0 +1,38 @@
+---
+# Geofence-warrant exhibit. The structured "Geographical Area"
+# attachment that accompanies a Google Sensorvault geofence warrant.
+#
+# Render with:  quarto render exhibit-geofence-warrant.qmd
+
+format: warrant-vignette-typst
+document-types:
+  - attachment
+  - exhibit
+
+# ---- Header consistency ----
+state: "Indiana"
+county: "Pawnee County"
+city: "Pawnee"
+detective-name: "Detective B. Macklin"
+case-number: "CR24-087"
+
+# ---- Exhibit content ----
+exhibit-description: |
+  Attached is the geofence search warrant served on Google LLC,
+  describing the geographical area, time window, and target
+  accounts.
+
+exhibit-type: geofence-warrant
+exhibit-title: "GEOFENCE SEARCH WARRANT -- GOOGLE LLC"
+geofence-window-start: "2024-04-22 16:20 EST"
+geofence-window-end:   "2024-04-22 17:20 EST"
+geofence-center:       "39.180835, -86.532128"
+geofence-radius-m:     150
+geofence-narrative: |
+  This warrant applies to the Google Accounts associated with
+  devices that were located inside the geographical region bounded
+  by the latitude/longitude coordinate above and the time window
+  listed. The targeted area encompasses 415 W. Sullivan Street,
+  Pawnee, Indiana, and an adjacent business the unidentified
+  subject fled toward following the incident.
+---

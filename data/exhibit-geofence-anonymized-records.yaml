@@ -1,0 +1,101 @@
+# Records for exhibit-geofence-anonymized.qmd. Loaded by Typst's
+# yaml() function via the exhibit-records-file YAML field, which
+# bypasses Pandoc's metadata serializer (it drops nested-dict
+# contents for some record schemas).
+
+- device-id: "-2058716931"
+  timestamp: "2024-04-22 16:30:01 UTC"
+  latitude: 39.180812
+  longitude: -86.532145
+  source: "GPS"
+  display-radius-m: 16
+- device-id: "-2058716931"
+  timestamp: "2024-04-22 16:31:14 UTC"
+  latitude: 39.180821
+  longitude: -86.532138
+  source: "GPS"
+  display-radius-m: 14
+- device-id: "-1844271119"
+  timestamp: "2024-04-22 16:20:30 UTC"
+  latitude: 39.180802
+  longitude: -86.532161
+  source: "WiFi"
+  display-radius-m: 25
+- device-id: "-1844271119"
+  timestamp: "2024-04-22 16:22:31 UTC"
+  latitude: 39.180809
+  longitude: -86.532154
+  source: "WiFi"
+  display-radius-m: 32
+- device-id: "-1662304683"
+  timestamp: "2024-04-22 16:44:48 UTC"
+  latitude: 39.180892
+  longitude: -86.532089
+  source: "GPS"
+  display-radius-m: 15
+- device-id: "-1662304683"
+  timestamp: "2024-04-22 16:47:13 UTC"
+  latitude: 39.180874
+  longitude: -86.532102
+  source: "GPS"
+  display-radius-m: 18
+- device-id: "-1637158857"
+  timestamp: "2024-04-22 16:21:36 UTC"
+  latitude: 39.180835
+  longitude: -86.532128
+  source: "Cell"
+  display-radius-m: 84
+- device-id: "-1637158857"
+  timestamp: "2024-04-22 16:35:29 UTC"
+  latitude: 39.180841
+  longitude: -86.532124
+  source: "GPS"
+  display-radius-m: 14
+- device-id: "-1305167611"
+  timestamp: "2024-04-22 16:31:26 UTC"
+  latitude: 39.180816
+  longitude: -86.532149
+  source: "WiFi"
+  display-radius-m: 57
+- device-id: "-1144423700"
+  timestamp: "2024-04-22 16:41:45 UTC"
+  latitude: 39.180859
+  longitude: -86.532117
+  source: "GPS"
+  display-radius-m: 84
+- device-id: "1162381959"
+  timestamp: "2024-04-22 16:21:36 UTC"
+  latitude: 39.180828
+  longitude: -86.532133
+  source: "WiFi"
+  display-radius-m: 24
+- device-id: "138503045"
+  timestamp: "2024-04-22 16:27:38 UTC"
+  latitude: 39.180848
+  longitude: -86.532112
+  source: "GPS"
+  display-radius-m: 24
+- device-id: "319756533"
+  timestamp: "2024-04-22 16:17:15 UTC"
+  latitude: 39.180866
+  longitude: -86.532098
+  source: "GPS"
+  display-radius-m: 32
+- device-id: "449021346"
+  timestamp: "2024-04-22 16:04:45 UTC"
+  latitude: 39.180874
+  longitude: -86.532089
+  source: "Cell"
+  display-radius-m: 122
+- device-id: "702354289"
+  timestamp: "2024-04-22 16:29:14 UTC"
+  latitude: 39.180850
+  longitude: -86.532110
+  source: "GPS"
+  display-radius-m: 84
+- device-id: "907512662"
+  timestamp: "2024-04-22 16:35:45 UTC"
+  latitude: 39.180854
+  longitude: -86.532107
+  source: "WiFi"
+  display-radius-m: 84
